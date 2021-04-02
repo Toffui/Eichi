@@ -43,7 +43,7 @@ client.on("guildMemberAdd", (member) => {
         .then(() => message.reply(`${member.user.tag} was kicked.`))
         .catch((error) => message.reply(`Sorry, an error occured.`))
     }
-  })
+  });
   
 
-client.login("ODI3MzE3MzAwMzU2MDU1MDk5.YGZRRw.zQryPN1doXTTYkqSM12ZcfXhCdQ")
+client.login(process.env.token);
